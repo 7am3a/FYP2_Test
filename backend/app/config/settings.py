@@ -31,8 +31,14 @@ class Settings(BaseSettings):
     
     # API
     api_prefix: str = "/api"
-    cors_origins: List[str] = ["http://localhost:5173", "http://localhost:3000" , "fyp-2-test-git-main-fyp7am3a.vercel.app"]
-    
+    cors_origins: List[str] = [
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://fyp-2-test.vercel.app",
+        "https://fyp-2-test-git-main-fyp7am3a.vercel.app",
+        "https://fyp-2-test-9pdv6zey5-fyp7am3a.vercel.app"
+    ]
+        
     # File Upload Limits
     max_file_size_mb: int = 100
     max_image_size_mb: int = 50
