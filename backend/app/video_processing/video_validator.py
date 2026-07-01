@@ -26,6 +26,7 @@ Why This Exists:
 import os
 import logging
 import subprocess
+import json 
 from typing import Tuple, Optional
 from pathlib import Path
 
@@ -244,7 +245,6 @@ class VideoValidator:
                 return None
             
             # Parse JSON output
-            import json
             info = json.loads(result.stdout)
             
             # Extract relevant information
