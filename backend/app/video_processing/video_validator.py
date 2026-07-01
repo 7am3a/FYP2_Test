@@ -224,7 +224,7 @@ class VideoValidator:
         try:
             # Use ffprobe to get video information
             cmd = [
-                'ffprobe',
+                '/usr/bin/ffprobe',
                 '-v', 'error',
                 '-select_streams', 'v:0',
                 '-show_entries', 'stream=width,height,r_frame_rate,duration',
