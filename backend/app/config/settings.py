@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     
     # API
     api_prefix: str = "/api"
-    cors_origins: List[str] = ["http://localhost:5173", "http://localhost:3000"]
+    cors_origins: List[str] = ["http://localhost:5173", "http://localhost:3000","https://master.d3nbpa07kvknbh.amplifyapp.com"]
     
     # File Upload Limits
     max_file_size_mb: int = 100
